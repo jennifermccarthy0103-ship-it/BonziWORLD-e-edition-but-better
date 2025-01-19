@@ -1714,7 +1714,7 @@ let userCommands = {
     }
   },
 
-  setbonzitvvid2: function(vidRaw) {
+  playtwice: function(vidRaw) {
     if (this.room.rid != "bonzi_tv") return;
 
 
@@ -1725,13 +1725,20 @@ let userCommands = {
       identId: vidId,
     });
   },
-  setbonzitvvid3: function(vidRaw) {
+  playthird: function(vidRaw) {
     if (this.room.rid != "bonzi_tv") return;
 
 
     var bonziTvIdent = ["https://www.youtube.com/watch?v=l_F7ZyzufPg", "https://www.youtube.com/watch?v=GCA5CB5uUyA", "https://www.youtube.com/watch?v=rBPKOZNd7mA", "https://www.youtube.com/watch?v=VJs_VALzi_8"];
+
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
+if (video.isRestricted || video.isPrivate || video.isDeleted) {
+    video.currentTime = video.duration; // Skip to the end of the video
+} else {
+  
+   }
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+	  
     this.room.vid = vidId;
     this.room.emit("replaceTVWithURL", {
       id: vidId,
