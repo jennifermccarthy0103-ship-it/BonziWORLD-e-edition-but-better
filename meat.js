@@ -2005,7 +2005,7 @@ if (video.isRestricted || video.isPrivate || video.isDeleted) {
       });
       return;
     }
-    if ((clrurl.match(/cdn.discordapp.com/gi) || clrurl.match(/media.discordapp.net/gi) || clrurl.match(/raw.githubusercontent.com/gi) || clrurl.match(/i.ibb.co/gi)) && (clrurl.match(/.jpeg/gi) || clrurl.match(/.gif/gi) || clrurl.match(/.png/gi) || clrurl.match(/.webp/gi))) {
+    if ((clrurl.match(/cdn.discordapp.com/gi) || clrurl.match(/files.catbox.moe/gi) || clrurl.match(/raw.githubusercontent.com/gi) || clrurl.match(/i.ibb.co/gi)) && (clrurl.match(/.jpeg/gi) || clrurl.match(/.gif/gi) || clrurl.match(/.png/gi) || clrurl.match(/.webp/gi))) {
       this.public.color = "empty";
       this.public.color_cross = clrurl;
       this.room.updateUser(this);
