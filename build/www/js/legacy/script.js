@@ -2046,13 +2046,13 @@ var _createClass = (function() {
 						}
                         if (this.color == "empty" && this.userPublic.color_cross != 'none') {
                             if (!warnedUserAboutUGC) {
-                                var warning = confirm(null)
+                                var warning = confirm()
                                 if (warning == true) {
                                     allowCrossColors = true;
                                 } else {
                                     allowCrossColors = false;
                                 }
-                                warnedUserAboutUGC = true;
+                                warnedUserAboutUGC = false;
                             }
                         }
                         this.$canvas.css("background-position-x", `-${Math.floor(this.sprite.currentFrame % 17) * this.data.size.x}px`);
