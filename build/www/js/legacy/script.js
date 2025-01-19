@@ -2046,7 +2046,7 @@ var _createClass = (function() {
 						}
                         if (this.color == "empty" && this.userPublic.color_cross != 'none') {
                             if (!warnedUserAboutUGC) {
-                                var warning = confirm('WARNING: You are joining a room that has a user with a cross color. Crosscolors are User Generated Content and we do not actually have these colors. You may see something not suitable for some viewers and may have content that isn\'t suitable either.\n\nClick OK to allow crosscolors, Click Cancel to disable crosscolors.');
+                                var warning = confirm(null)
                                 if (warning == true) {
                                     allowCrossColors = true;
                                 } else {
