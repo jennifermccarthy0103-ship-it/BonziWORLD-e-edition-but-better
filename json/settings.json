@@ -1,9 +1,9 @@
 {
 	"prefs": {
 		"public": {
-			"char_limit": 8600000,
-			"name_limit": 500,
-			"godword": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+			"char_limit": 1000,
+			"name_limit": 30,
+			"godword": "1234567890",
 			"runlevel": {
 				"godmode": 0,
 				"youtube": 0,
@@ -85,10 +85,10 @@
 				"min": 0,
 				"default": "random"
 			},
-			"defaultName": "BonziBUDDY"
+			"defaultName": "Anonymous"
 		},
 		"private": {
-			"char_limit": 32000000,
+			"char_limit": 9999,
 			"name_limit": 500,	
 			"godword": null,
 			"runlevel": {
